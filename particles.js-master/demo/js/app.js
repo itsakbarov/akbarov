@@ -41,8 +41,8 @@ particlesJS('falling_snow',
         }
       },
       "opacity": {
-        "value": 1,
-        "random": false,
+        "value": 0.7,
+        "random": true,
         "anim": {
           "enable": false,
           "speed": 1,
@@ -69,7 +69,7 @@ particlesJS('falling_snow',
       },
       "move": {
         "enable": 'none',
-        "speed": 4,
+        "speed": 1.5,
         "direction": "bottom",
         "random": false,
         "straight": false,
@@ -98,7 +98,7 @@ particlesJS('falling_snow',
         "grab": {
           "distance": 200,
           "line_linked": {
-            "opacity": 1
+            "opacity": 0.5
           }
         },
         "bubble": {

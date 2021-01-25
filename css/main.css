@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     user-select: none;
 }
 
@@ -137,7 +138,9 @@ header .navbar .menu_link,
     display: block;
     padding: 10px 20px;
 }
-
+.hero{
+    height: 100vh;
+}
 
 .site_hero .welcome {
     font-family: 'Titillium_Web';
@@ -152,9 +155,22 @@ header .navbar .menu_link,
     text-decoration: none;
     text-transform: capitalize;
     color: white;
+    display: inline-block;
+    height: 47px;
+    width: auto;
+    margin-bottom: 10px;
     font-family: Titillium_Web;
     padding: 10px 25px;
     border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ff6347;
+z-index: 999999;
 }
 
 .gradient-border {
@@ -299,4 +315,86 @@ header .navbar .menu_link,
     header .navbar {
         display: none;
     }
+
+}
+::-webkit-scrollbar {
+  width: 10px;
+  transition: all ease 0.5s;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  transition: all ease 0.5s;
+  width: 5px;
+  background: #000;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  transition: all ease 0.5s;
+  background: #393e89;
+  border: 60px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  transition: all ease 0.5s;
+  background: #302f75;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #3945a2;
+}
+::-webkit-scrollbar-track {
+  transition: all ease 0.5s;
+  background: #000000;
+  border: 59px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #000;
+}
+::-webkit-scrollbar-track:active {
+  transition: all ease 0.5s;
+background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.resume-heading{
+    width: 100%;
+    padding: 32px 12px;
+    font-family :'Titillium_Web';
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+}
+.resume-heading .user-name{
+    font-size: 42px;
+    color: white;
+}
+.resume-heading .user-position{
+    color: white;
+    font-size: 28px;
+}
+.resume-heading .heading-info .address{
+    color: rgb(141, 141, 141);
+    font-size: 16px;
+}
+.resume-heading .heading-info .address span{
+    font-size: 18px;
+    color: white;
+}
+.resume-heading .heading-info .item-link{
+   color: rgb(255, 255, 255);
+    font-size: 18px; 
+}
+.resume-heading .heading-info .item-link a{
+    color: rgb(141, 141, 141);
+    margin-left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.resume-main .inspiration{
+    font-family :'Titillium_Web';
+    margin: 0 auto;
+    width: 75%;
+    padding: 30px 0;
+    color: white;
 }

@@ -6,68 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Particle js</title>
 </head>
 
-<body>
+<body id="stop-scrolling">
     <section id="falling_snow">
     </section>
-    <header class="container">
-        <div class="logo">
-            <a href="" class="logo"><span>the</span> Akbarov</a>
-        </div>
-        <div class="navbar">
-            <a class="menu_link" href="#">Home</a>
-            <div class="menu_link dropdown_btn">Portfolio
-                <div class="dropdown_menu">
-                    <a class="dropdown_link" href="#">Works</a>
-                    <a class="dropdown_link" href="#">Experience</a>
-                    <a class="dropdown_link" href="#">Skills</a>
-                    <a class="dropdown_link" href="#">Website templates</a>
+    <div class="preloader"></div>
+    <section class="hero">
+        <header class="container">
+            <div class="logo">
+                <a href="" class="logo"><span>the</span> Akbarov</a>
+            </div>
+            <div class="navbar">
+                <a class="menu_link" href="#portfolio">Resume</a>
+                <div class="menu_link dropdown_btn">SomeLink
+                    <div class="dropdown_menu">
+                        <a class="dropdown_link" href="#">Works</a>
+                        <a class="dropdown_link" href="#">Experience</a>
+                        <a class="dropdown_link" href="#">Skills</a>
+                        <a class="dropdown_link" href="#">Website templates</a>
+                    </div>
+                </div>
+                <a class="menu_link" href="#">Contact</a>
+                <a class="menu_link" href="#">Help</a>
+
+            </div>
+            <div id="nav-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <main>
+            <div class="site_hero container">
+                <h1 class="welcome">
+                    Hi, I'm Akbarov dev.
+                </h1>
+                <br>
+                <h1 class="animated_text" style="font-family:sans-serif;">
+                    We make <span class="typer" id="some-id"
+                        data-words="web designs,web sites, social networking , mobile apps, web apps ,your all of the desires  "
+                        data-colors="#ed426d,#6d67c6,#b74033,#6d67c6" data-delay="50" data-loop="1">
+                    </span>
+                </h1>
+                <br>
+                <br>
+                <a class="gradient-border follow_me" href="http://github.com/theAkbarov">Follow me on Github</a>
+            </div>
+        </main>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="resume-heading">
+            <div class="container">
+                <h2 class="user-name">Sardor Akbarov</h2>
+                <p class="user-position">Web Developer</p>
+            </div>
+            <div class="container">
+                <div class="heading-info">
+                    <p class="address">
+                        <span>Address: </span>
+                        Toshkent, Shayxontohur, 100011
+                    </p>
+                    <p class="item-link">Phone
+                        <a href="tel:+998330116000" class="contact-number">+998 33 011 60 00</a>
+                    </p>
+                    <p class="item-link">Email:
+                        <a href="mailto:asrorjon5538@gmail.com">asrorjon5538@gmail.com</a>
+                    </p>
+                    <p class="item-link">Twitter:
+                        <a target="_blank" href="https://twitter.com/asror__akbarov">Akbarov</a>
+                    </p>
                 </div>
             </div>
-            <a class="menu_link" href="#">Contact</a>
-            <a class="menu_link" href="#">Help</a>
-                
         </div>
-        <div id="nav-icon1">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="resume-main">
+            <div class="container">
+                <p class="inspiration">
+                    Enthusiastic Frontend development eager to contribute to team success through hard work, attention
+                    to detail and excellent organizational skills. Clear understanding of codes and interactive web
+                    pages and training in Javascript. Motivated to learn, grow and excel in Web development.
+                </p>
+                <div class="row">
+                    <div class="skills">
+                        
+                    </div>
+                    <div class="education">
+
+                    </div>
                 </div>
-    </header>
-    <main>
-        <div class="site_hero container">
-            <h1 class="welcome">
-                Hi, I'm Akbarov dev.
-            </h1>
-            <br>
-            <h1 class="animated_text" style="font-family:sans-serif;">
-                We make <span class="typer" id="some-id"
-                    data-words="web designs,web sites, social networking , mobile apps, web apps ,your all of the desires  "
-                    data-colors="#ed426d,#6d67c6,#b74033,#6d67c6" data-delay="50" data-loop="1">
-                </span>
-            </h1>
-            <br>
-            <br>
-            <a class="gradient-border follow_me" href="http://github.com/theAkbarov">Follow me on Github</a>
+            </div>
         </div>
-    </main>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="./particles.js-master/particles.js"></script>
     <script src="./particles.js-master/demo/js/app.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
 
-   <script>
-        $(document).ready(function(){
-	$('#nav-icon1').click(function(){
-		$(this).toggleClass('open');
-	});
-});
-   </script>
+        $(document).ready(function () {
+            $('#nav-icon1').click(function () {
+                $(this).toggleClass('open');
+            });
+        });
+
+        function preloaderFadeOutInit() {
+            $('.preloader').fadeOut('slow');
+            $('body').attr('id', '');
+        }
+        // Window load function
+        jQuery(window).on('load', function () {
+            (function ($) {
+                preloaderFadeOutInit();
+            })(jQuery);
+        });
+    </script>
 </body>
 
 </html>
