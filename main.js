@@ -152,3 +152,14 @@ function atvImg() {
 }
 
 atvImg();
+let header = document.querySelector('.header-inner');
+let main = document.querySelector('.site_hero')
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+        header.classList.add('active')
+        main.style.paddingTop = '100px'
+    } else {
+        header.classList.remove('active')
+        main.style.paddingTop = '0px'
+    }
+})
