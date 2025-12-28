@@ -121,19 +121,23 @@ header .navbar .menu_link,
 
 .navbar .dropdown_menu {
     position: absolute;
-    top: 32px;
+    top: 100%;
     background: rgb(93, 83, 83);
     left: 0;
     border-radius: 10px;
     border-top-left-radius: 0;
     width: 200px;
     box-sizing: border-box;
-    transform: rotateX(-90deg);
-    transition: 0.4s all cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 
 .dropdown_btn:hover .dropdown_menu {
-    transform: rotateX(0deg)
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .animated_text {
